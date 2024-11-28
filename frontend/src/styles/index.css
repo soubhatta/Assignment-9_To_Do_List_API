@@ -1,0 +1,113 @@
+@font-face {
+  font-family: exo2;
+  src: url('Exo2-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: orbitron;
+  src: url('Orbitron-VariableFont_wght.ttf');
+}
+
+/* Global Styles */
+body {
+  font-family: orbitron;
+  font-weight: 600;
+  line-height: 2px;
+  background-color: #b29268;
+  color: #403D39;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #403D39;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Styles */
+form {
+  margin-bottom: 2rem;
+}
+
+/* Button Styles */
+button {
+  font-size: 1rem;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(12, 196, 37, 0.25);
+}
+
+/* Card Styles */
+.card {
+  background-color: #CBC3B8;
+  border: 1px solid #6b5050;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #5f778f;
+}
+
+.card-text {
+  color: #2e2b27;
+}
+
+/* Custom Classes for To-Do List */
+.todo-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.todo-item {
+  padding: 1rem;
+  border-bottom: 1px solid #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.todo-item p {
+  margin: 0;
+  color: #6c757d;
+}
+
+/* Completed To-Do Styles */
+.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+/* Responsive Layout Adjustments */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem;
+  }
+
+  .card {
+      margin: 1rem 0;
+  }
+
+  .todo-container {
+      padding: 0 1rem;
+  }
+
+  button {
+      font-size: 0.9rem;
+  }
+}
